@@ -14,10 +14,10 @@ jobs :
               -uses : 
                   checkout@v3
               -name : Run a single line script
-               run : echo Hello again!
+              run : echo Hello again!
 
               -name : Runs a multiline script
-               run : |
+              run : |
                   echo this is again a multiline script
                   echo you can test your code here
 
