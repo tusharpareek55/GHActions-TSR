@@ -1,22 +1,22 @@
-name : WF2
+name: WF2
 
-on : 
-  push : 
-    branches : ["main"]
+on: 
+  push: 
+    branches: ["main"]
 
-  workflow_dispatch :
+  workflow_dispatch:
 
-jobs : 
-  job1 :
-    runs on : windows-latest
+jobs: 
+  job1:
+    runs on: ubuntu-latest
          
-    steps :
-    - uses : checkout@v3
-    - name : Run a single line script
-      run : echo Hello again!
+    steps:
+    - uses: checkout@v3
+    - name: Run a single line script
+      run: echo Hello again!
 
-    - name : Runs a multiline script
-      run : |
+    - name: Runs a multiline script
+      run: |
           echo this is again a multiline script
           echo you can test your code here
 
