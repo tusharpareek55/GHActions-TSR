@@ -1,0 +1,24 @@
+name : WF2
+
+on : 
+    push : 
+        branches : ["main"]
+
+    workflow-dispatch :
+
+jobs : 
+    job1 :
+        runs on : windows-latest
+         
+          -steps :
+              -uses : 
+                  checkout@v3
+              -name : Run a single line script
+              run : echo Hello again!
+
+              -name : Runs a multiline script
+              run : |
+                  echo this is again a multiline script
+                  echo you can test your code here
+
+
