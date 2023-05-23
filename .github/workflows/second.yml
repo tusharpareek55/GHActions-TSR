@@ -18,6 +18,6 @@ jobs:
     - name: Runs a multiline script
       run: |
           echo this is again a multiline script
-          echo you can test your code here again
+          echo you can test your code here again !
 
   
